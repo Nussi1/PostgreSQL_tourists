@@ -1,0 +1,173 @@
+--create table inner_flight(
+--    id serial primary key,
+--    from_region varchar,
+--    to_destination varchar,
+--    company varchar,
+--    quantity int);
+--create table outter_flight(
+--    id serial primary key,
+--    from_country varchar,
+--    to_country varchar,
+--    flight_type text,
+--    company varchar,
+--    neighbors int
+--    );
+--insert into outter_flight(
+--    from_country, to_country, flight_type, company, neighbors)
+--    values (
+--    'Stuttgart', 'Munchen', 'passenger', 'German Air', 0
+--    );
+--insert into outter_flight(
+--    from_country, to_country, flight_type, company, neighbors)
+--    values (
+--    'Istanbul', 'Bishkek', 'passenger', 'Turkish Airlines', 5
+--    );
+--insert into outter_flight(
+--    from_country, to_country, flight_type, company, neighbors)
+--    values (
+--    'Osh', 'Munchen', 'passenger', 'German Air', 9
+--    );
+--insert into outter_flight(
+--    from_country, to_country, flight_type, company, neighbors)
+--    values (
+--    'Bishkek', 'Naryn', 'passenger', 'Naryn Air', 0
+--    );
+--insert into outter_flight(
+--    from_country, to_country, flight_type, company, neighbors)
+--    values (
+--    'Barselona', 'Munchen', 'passenger', 'German Air', 2
+--    );
+--insert into outter_flight(
+--    from_country, to_country, flight_type, company, neighbors)
+--    values (
+--    'Washington DC', 'Tokio', 'freight', 'American Air', 1
+--    );
+--insert into outter_flight(
+--    from_country, to_country, flight_type, company, neighbors)
+--    values (
+--    'Berlin', 'Rome', 'passenger', 'German Air', 3
+--    );
+--insert into outter_flight(
+--    from_country, to_country, flight_type, company, neighbors)
+--    values (
+--    'Naryn', 'Istanbul', 'passenger', 'Turkish Airlines', 5
+--    );
+--insert into outter_flight(
+--    from_country, to_country, flight_type, company, neighbors)
+--    values (
+--    'Osh', 'Urumchi', 'passenger', 'China Air', 3
+--    );
+--insert into outter_flight(
+--    from_country, to_country, flight_type, company, neighbors)
+--    values (
+--    'Arlington', 'London', 'freight', 'American Air', 3
+--    );
+--insert into outter_flight(
+--    from_country, to_country, flight_type, company, neighbors)
+--    values (
+--    'Naryn', 'Astana', 'passenger', 'Astana Air', 2
+--    );
+--insert into outter_flight(
+--    from_country, to_country, flight_type, company, neighbors)
+--    values (
+--    'Paris', 'Munchen', 'passenger', 'German Air', 3
+--    );
+--insert into outter_flight(
+--    from_country, to_country, flight_type, company, neighbors)
+--    values (
+--    'Paris', 'Mehico', 'passenger', 'American Air', 3
+--    );
+--insert into outter_flight(
+--    from_country, to_country, flight_type, company, neighbors)
+--    values (
+--    'Berlin', 'Washington DC', 'passenger', 'American Air', 3
+--    );
+--select * from outter_flight;
+--insert into inner_flight(
+--    id, from_region, to_destination, company, quantity)
+--    values (
+--    1, 'Bishkek', 'Istanbul', 'Turkish Airlines', 2
+--    );
+--insert into inner_flight(
+--    id, from_region, to_destination, company, quantity)
+--    values (
+--    2, 'Bishkek', 'Tashkent', 'Turkish Airlines', 5
+--    );
+--insert into inner_flight(
+--    id, from_region, to_destination, company, quantity)
+--    values (
+--    3, 'Bishkek', 'Almaty', 'Turkish Airlines', 1
+--    );
+--insert into inner_flight(
+--    id, from_region, to_destination, company, quantity)
+--    values (
+--    4, 'Bishkek', 'London', 'Turkish Airlines', 20
+--    );
+--insert into inner_flight(
+--    id, from_region, to_destination, company, quantity)
+--    values (
+--    5, 'Bishkek', 'Osh', 'Pegasus', 30
+--    );
+--insert into inner_flight(
+--    id, from_region, to_destination, company, quantity)
+--    values (
+--    6, 'Bishkek', 'Jalal-Abad', 'Pegasus', 4
+--    );
+--insert into inner_flight(
+--    id, from_region, to_destination, company, quantity)
+--    values (
+--    7, 'Bishkek', 'Tbilisi', 'Turkish Airlines', 50
+--    );
+--insert into inner_flight(
+--    id, from_region, to_destination, company, quantity)
+--    values (
+--    8, 'Bishkek', 'Batumi', 'Pegasus', 34
+--    );
+--insert into inner_flight(
+--    id, from_region, to_destination, company, quantity)
+--    values (
+--    9, 'Osh', 'London', 'Osh flights', 2
+--    );
+--insert into inner_flight(
+--    id, from_region, to_destination, company, quantity)
+--    values (
+--    10, 'Chlpon-Ata', 'Istanbul', 'Turkish Airlines', 2
+--    );
+--insert into inner_flight(
+--    id, from_region, to_destination, company, quantity)
+--    values (
+--    11, 'Bishkek', 'Astana', 'Kyrgyzstan airplanes', 20
+--    );
+--insert into inner_flight(
+--    id, from_region, to_destination, company, quantity)
+--    values (
+--    12, 'Bishkek', 'Munchen', 'Turkish Airlines', 7
+--    );
+--insert into inner_flight(
+--    id, from_region, to_destination, company, quantity)
+--    values (
+--    13, 'Cholpon-Ana', 'Istanbul', 'NewAir', 13
+--    );
+--insert into inner_flight(
+--    id, from_region, to_destination, company, quantity)
+--    values (
+--    14, 'Naryn', 'Istanbul', 'Kyrgyzstan airplanes', 40
+--    );
+--insert into inner_flight(
+--    id, from_region, to_destination, company, quantity)
+--    values (
+--    15, 'Bishkek', 'Moskow', 'Aeroflot', 45
+--    );
+--select * from inner_flight;
+--select * from outter_flight;
+--select from_region, to_destination from inner_flight
+--    where id >10;
+--select id, to_destination from inner_flight where to_destination='Osh' or to_destination='Bishkek';
+--select quantity from inner_flight where quantity>=150;
+--select company from outter_flight where flight_type='freight';
+--select * from outter_flight
+--    where id <7;
+--select * from outter_flight where flight_type='freight';
+--select * from outter_flight where neighbors>3;
+--select * from outter_flight where neighbors<=3 and flight_type='passenger';
+--select company, to_country from outter_flight;
