@@ -1,0 +1,26 @@
+create table developers(id serial primary key,
+    name_d varchar,
+    skill varchar,
+    programming_lang varchar default 'HTML');
+select * from developers;
+
+alter table developers
+RENAME COLUMN skill TO age
+
+insert into developers(name_d, age, programming_lang)
+values('Bakyt', 23, 'Python'),
+('Beka', 15, 'Java'),
+('Gulya', 30, 'JS'),
+('Beka', 30, 'Assembler');
+ALTER TABLE developers
+ADD COLUMN cash integer;
+insert into developers(name_d, age, programming_lang, cash)
+values('Katya', 16, 'Python',3000)
+select * from developers;
+UPDATE developers
+SET age='27'
+WHERE age>'25';
+
+comment on column developers.name_d is 'Имя пользователя';
+update developers set name_d='Ecaterina' where name_d='Katya';
+select * from developers;
