@@ -1,0 +1,19 @@
+create table developers(id serial primary key,
+    name_d varchar,
+    population int);
+insert into developers(name_d, population)
+    values ('Chui', 100000),
+        ('Osh', 200000),
+        ('Naryn', 300000);
+
+alter table developers
+add column teams varchar;
+
+alter table developers
+rename column population to participants;
+
+delete from developers where participants = 300000;
+update developers
+set participants = 7000
+where participants > 8000;
+select * from developers;
