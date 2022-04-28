@@ -1,0 +1,45 @@
+--create table phones(
+--    id serial primary key,
+--    name_p varchar,
+--    price int
+--);
+--insert into phones(
+--    name_p, price
+--) values ('iPhone', 1000);
+
+--alter table phones
+--add column country varchar;
+--
+--insert into phones(name_p, price, country)
+--values ('Samsung', 800, 'Korea'),
+--('Nokia', 200, 'Kyrgyzstan'),
+--('Mi', 1, 'Usbekistan')
+--('Google', 'free', 'USA');
+
+
+--select * from phones;
+--
+--create table cars(
+--    id serial primary key,
+--    name_c varchar,
+--    price int default 300);
+--insert into cars(name_c, price)
+--values('MB', 1000);
+
+alter table cars
+add column country varchar;
+
+insert into cars(name_c, price, country)
+values ('Audi', 300, 'Germany'),
+('BMW', 11800, 'Germany'),
+('Tulpar', 1111800, 'Kyrgyzstan');
+
+update cars
+set country = 'Germany'
+where name_c = 'MB';
+
+delete from cars where price < 1000;
+
+
+
+select * from cars;
