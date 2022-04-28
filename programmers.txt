@@ -1,0 +1,46 @@
+create table students(
+    id serial primary key,
+    name_st varchar,
+    age int,
+    fp_language varchar,
+    sp_language varchar);
+select * from students;
+insert into students(name_st, age, fp_language, sp_language)
+values('Bakyt', 23, 'Python', 'C++');
+
+insert into students(name_st, age, fp_language, sp_language)
+values('Aigul', 46, 'Python', 'Java');
+
+insert into students(name_st, age, fp_language, sp_language)
+values('Jika', 13, 'C', 'Ruby_On_Rails');
+select * from students;
+
+insert into students(name_st, age, fp_language, sp_language)
+values('Jika', 13, 'C', 'Ruby_On_Rails');
+
+insert into students(name_st, age, fp_language, sp_language)
+values('Ermek', 16, 'Java', 'C');
+
+insert into students(name_st, age, fp_language, sp_language)
+values('Artem', 55, 'C#', 'Java');
+
+insert into students(name_st, age, fp_language, sp_language)
+values('Roma', 31, 'Pascal', 'C');
+
+insert into students(name_st, age, fp_language, sp_language)
+values('Beka', 25, 'C#', 'JavaScript');
+
+select * from students;
+select name_st, fp_language, sp_language from students;
+select name_st, age from students where age >30;
+select * from students where fp_language='Python' or fp_language='C#';
+select * from students where sp_language='Python' or sp_language='C#';
+select * from students where fp_language='Python' and fp_language='C#' or fp_language='C#' or fp_language='Java';
+delete from students where id=1;
+delete from students where id=3;
+delete from students where id=5;
+delete from students where id=7;
+select * from students;
+select * from students where age < 18;
+drop table students;
+drop database programer;
